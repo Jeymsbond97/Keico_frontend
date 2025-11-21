@@ -42,7 +42,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .header-container {
+    height: 4.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    height: 5rem;
+    gap: 1rem;
+  }
 }
 
 .header-logo {

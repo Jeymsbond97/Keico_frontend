@@ -6,9 +6,7 @@ import { ArrowRight, Zap, Globe, Leaf, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import HeroSlider from "@/components/Hero/HeroSlider";
 import ProductCard from "@/components/Products/ProductCard";
 import NewsCard from "@/components/News/NewsCard";
@@ -19,23 +17,23 @@ export default function Home() {
   const features = [
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Smart Grid Technology",
-      description: "Advanced AI-powered energy management systems",
+      title: "스마트 그리드 기술",
+      description: "AI 기반 고급 에너지 관리 시스템",
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Global Reach",
-      description: "Serving clients across multiple continents",
+      title: "글로벌 리치",
+      description: "여러 대륙의 고객에게 서비스 제공",
     },
     {
       icon: <Leaf className="w-8 h-8" />,
-      title: "Green Energy",
-      description: "Leading the transition to renewable energy",
+      title: "그린 에너지",
+      description: "재생 에너지 전환을 선도",
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Innovation",
-      description: "Cutting-edge solutions for tomorrow's challenges",
+      title: "혁신",
+      description: "미래의 도전을 위한 최첨단 솔루션",
     },
   ];
 
@@ -111,10 +109,9 @@ export default function Home() {
             viewport={{ once: true }}
             className="homepage-section-header"
           >
-            <h2 className="homepage-section-title">Why Choose Keico Plus</h2>
+            <h2 className="homepage-section-title">KEICO PLUS를 선택하는 이유</h2>
             <p className="homepage-section-description">
-              Leading the future of energy with innovative solutions and
-              sustainable practices
+              혁신적인 솔루션과 지속 가능한 실천으로 에너지의 미래를 선도합니다
             </p>
           </motion.div>
           <div className="homepage-features-grid">
@@ -204,15 +201,15 @@ export default function Home() {
           {/* News Slider */}
           <div className="homepage-news-slider-wrapper">
             <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation={true}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-              loop={true}
               slidesPerView={1}
               spaceBetween={24}
+              speed={200}
+              touchRatio={2}
+              resistance={true}
+              resistanceRatio={0.3}
+              threshold={10}
+              longSwipesRatio={0.5}
+              followFinger={true}
               breakpoints={{
                 640: {
                   slidesPerView: 2,
