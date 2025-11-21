@@ -1,0 +1,234 @@
+.news-detail-page {
+  min-height: 100vh;
+}
+
+.news-detail-back {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .news-detail-back {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-detail-back {
+    padding: 3rem 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .news-detail-back {
+    padding: 3rem 4rem;
+  }
+}
+
+.news-detail-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(75, 85, 99);
+  transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-back-link {
+    color: rgb(156, 163, 175);
+  }
+}
+
+.news-detail-back-link:hover {
+  color: rgb(147, 51, 234);
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-back-link:hover {
+    color: rgb(196, 181, 253);
+  }
+}
+
+.news-detail-article {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  background: rgb(249, 250, 251);
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-article {
+    background: rgb(31, 41, 55);
+  }
+}
+
+.news-detail-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .news-detail-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-detail-container {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .news-detail-container {
+    padding: 0 4rem;
+  }
+}
+
+.news-detail-image {
+  position: relative;
+  height: 20rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(147, 51, 234, 0.1);
+  transition: all 0.3s ease;
+}
+
+.news-detail-image:hover {
+  box-shadow: 0 30px 60px -12px rgba(147, 51, 234, 0.2);
+  transform: translateY(-4px);
+}
+
+@media (min-width: 768px) {
+  .news-detail-image {
+    height: 28rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-detail-image {
+    height: 36rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-image {
+    border-color: rgba(196, 181, 253, 0.2);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .news-detail-image:hover {
+    box-shadow: 0 30px 60px -12px rgba(196, 181, 253, 0.25);
+  }
+}
+
+.news-detail-content {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.news-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.news-detail-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(75, 85, 99);
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-date {
+    color: rgb(156, 163, 175);
+  }
+}
+
+.news-detail-category {
+  padding: 0.25rem 1rem;
+  background: rgb(243, 232, 255);
+  color: rgb(147, 51, 234);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-category {
+    background: rgba(147, 51, 234, 0.3);
+    color: rgb(196, 181, 253);
+  }
+}
+
+.news-detail-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: rgb(17, 24, 39);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .news-detail-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-detail-title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-title {
+    color: white;
+  }
+}
+
+.news-detail-description {
+  font-size: 1.25rem;
+  color: rgb(75, 85, 99);
+  margin-bottom: 3rem;
+  line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+  .news-detail-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-description {
+    color: rgb(156, 163, 175);
+  }
+}
+
+.news-detail-body {
+  color: rgb(55, 65, 81);
+  line-height: 1.75;
+  white-space: pre-line;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .news-detail-body {
+    font-size: 1.25rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-detail-body {
+    color: rgb(209, 213, 219);
+  }
+}
+
